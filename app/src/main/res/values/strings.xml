@@ -3,4 +3,27 @@
     <string name="new_word">New Word</string>
     <string name="saved_word">My Collections</string>
     <string name="todo">TODO</string>
+    <string name="Enter_word">Enter word here</string>
+    <string name="Update">Update This Word</string>
+    <string name="checkstring">
+        hi
+        i
+        am
+        a
+        vog
+        in
+        this
+        world
+        please
+        proved
+        it
+        if
+        you
+        can
+        do
+        it
+
+
+
+    </string>
 </resources>

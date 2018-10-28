@@ -40,7 +40,7 @@
         android:layout_marginStart="82dp"
         android:layout_marginTop="156dp"
         android:layout_marginEnd="88dp"
-        android:text="@string/new_word" />
+        android:text="@string/saved_word" />
 
 
 
