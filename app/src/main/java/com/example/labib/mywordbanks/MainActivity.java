@@ -8,17 +8,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button save_new_word , update_this_word;
+    private Button save_new_word ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
-        
+
 
 
         save_new_word = (Button) findViewById(R.id.save_new_word);
-        update_this_word = (Button)findViewById(R.id.save_this_word);
-
 
         save_new_word.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,14 +24,6 @@ public class MainActivity extends AppCompatActivity {
                 openUpdateActivity();
             }
         });
-
-        update_this_word.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openEnterMeaning();
-            }
-        });
-
     }
 
     public void openUpdateActivity(){
@@ -41,9 +31,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openEnterMeaning(){
-        Intent intent = new Intent(this, EnterMeaning.class);
-        startActivity(intent);
-    }
+
 
 }

@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Update_word" />
-        <activity android:name=".EnterMeaning"></activity>
+        <activity android:name=".EnterMeaning" />
+        <activity android:name=".WordDetail"></activity>
     </application>
 
 </manifest>

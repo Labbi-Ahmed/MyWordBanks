@@ -4,45 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EnterMeaning">
+    tools:context=".WordDetail">
 
     <TextView
-        android:id="@+id/Inserted_word"
+        android:id="@+id/view_word"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/InsertWord"
+        android:text="@string/Word"
         android:textAlignment="center"
         android:textSize="30sp"
         android:background="@color/liteSilver"
         />
 
-    <EditText
-        android:id="@+id/bangla_meaning"
+    <TextView
+        android:id="@+id/view_bangla_meaning"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Inserted_word"
+        android:layout_below="@id/view_word"
         android:layout_marginTop="15dp"
         android:background="@color/liteSilver"
         android:hint="@string/Bangla"
         android:textSize="40sp"
         />
 
-    <EditText
-        android:id="@+id/English_meaning"
+    <TextView
+        android:id="@+id/view_english_meaning"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/bangla_meaning"
+        android:layout_below="@id/view_bangla_meaning"
         android:layout_marginTop="15dp"
         android:background="@color/liteSilver"
         android:hint="@string/English"
         android:textSize="40sp"
         />
 
-    <EditText
+    <TextView
         android:id="@+id/Synonyms"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/English_meaning"
+        android:layout_below="@id/view_english_meaning"
         android:inputType="textMultiLine"
         android:gravity="top"
         android:layout_marginTop="15dp"
@@ -50,6 +50,7 @@
         android:hint="@string/Synonyme"
         android:textSize="30sp"
         />
+
 
 
 </RelativeLayout>
