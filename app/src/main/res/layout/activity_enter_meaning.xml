@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterMeaning">
+
+    <TextView
+        android:id="@+id/Inserted_word"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/InsertWord"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:background="@color/liteSilver"
+        />
+
+    <TextView
+        android:id="@+id/bangla_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Inserted_word"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"
+        android:hint="@string/Bangla"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/English_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bangla_meaning"
+        android:layout_marginTop="15dp"
+        android:background="@color/aqua"
+        android:hint="@string/English"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/Synonyms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/English_meaning"
+        android:layout_marginTop="15dp"
+        android:background="@color/fuchsia"
+        android:hint="@string/Synonyme"
+        android:textSize="40sp"
+        />
+
+
+</RelativeLayout>

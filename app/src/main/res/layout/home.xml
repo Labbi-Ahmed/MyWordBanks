@@ -19,7 +19,7 @@
         android:contentDescription="@string/todo" />
 
     <Button
-        android:id="@+id/new_word"
+        android:id="@+id/save_new_word"
         android:layout_width="wrap_content"
         android:layout_height="69dp"
         android:layout_below="@+id/imageView2"
@@ -29,19 +29,6 @@
         android:layout_marginTop="71dp"
         android:layout_marginEnd="86dp"
         android:text="@string/new_word" />
-
-    <Button
-        android:id="@+id/my_collection"
-        android:layout_width="wrap_content"
-        android:layout_height="69dp"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="88dp"
-        android:text="@string/saved_word" />
-
 
 
 

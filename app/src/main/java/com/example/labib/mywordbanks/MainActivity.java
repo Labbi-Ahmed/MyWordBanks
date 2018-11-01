@@ -8,43 +8,42 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button collected_word , save_word;
+    private Button save_new_word , update_this_word;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
+        
 
-        collected_word = (Button) findViewById(R.id.new_word);
-        save_word = (Button) findViewById(R.id.my_collection);
 
-        save_word.setOnClickListener(new View.OnClickListener() {
+        save_new_word = (Button) findViewById(R.id.save_new_word);
+        update_this_word = (Button)findViewById(R.id.save_this_word);
+
+
+        save_new_word.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openUpdateActivity();
             }
         });
 
-
-        collected_word.setOnClickListener(new View.OnClickListener() {
+        update_this_word.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openCollectedActivity();
+                openEnterMeaning();
             }
         });
-
 
     }
 
     public void openUpdateActivity(){
-            Intent intent = new Intent(this , Update_word.class);
-            startActivity(intent);
-    }
-
-    public void openCollectedActivity(){
-        Intent intent = new Intent(this, Collected_words.class);
+        Intent intent = new Intent(this , Update_word.class);
         startActivity(intent);
     }
 
-
+    public void openEnterMeaning(){
+        Intent intent = new Intent(this, EnterMeaning.class);
+        startActivity(intent);
+    }
 
 }

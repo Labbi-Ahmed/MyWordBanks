@@ -20,7 +20,7 @@
         />
 
     <Button
-        android:id="@+id/update_this_word"
+        android:id="@+id/save_this_word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/search_bar"
@@ -31,26 +31,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="398dp"
-        android:layout_below="@+id/update_this_word"
+        android:layout_below="@+id/save_this_word"
         android:layout_alignParentStart="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="-1dp">
 
-        <ScrollView
-            android:id="@+id/meaning_space_scroll"
+        <ListView
+            android:id="@+id/collected_word_list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignStart="@+id/update_this_word"
-            android:fadeScrollbars="true"
-            android:scrollbars="horizontal">
+            android:layout_height="wrap_content"
+            >
 
-
-            <TextView
-                android:id="@+id/meaning_space"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                />
-        </ScrollView>
+        </ListView>
 
 
     </LinearLayout>

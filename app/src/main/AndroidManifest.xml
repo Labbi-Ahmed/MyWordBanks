@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Collected_words" />
-        <activity android:name=".Update_word"></activity>
+        <activity android:name=".Update_word" />
+        <activity android:name=".EnterMeaning"></activity>
     </application>
 
 </manifest>

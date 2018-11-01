@@ -5,25 +5,8 @@
     <string name="todo">TODO</string>
     <string name="Enter_word">Enter word here</string>
     <string name="Update">Update This Word</string>
-    <string name="checkstring">
-        hi
-        i
-        am
-        a
-        vog
-        in
-        this
-        world
-        please
-        proved
-        it
-        if
-        you
-        can
-        do
-        it
-
-
-
-    </string>
+    <string name="Bangla">Meaning of Bangla</string>
+    <string name="English">Meaning of English</string>
+    <string name="Synonyme">Synonyme of this word</string>
+    <string name="InsertWord">Inserted Word</string>
 </resources>
