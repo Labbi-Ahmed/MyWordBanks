@@ -1,5 +1,6 @@
 package com.example.labib.mywordbanks;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,17 +20,31 @@ public class MainActivity extends AppCompatActivity {
         save_word.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.updateword);
+                openUpdateActivity();
             }
         });
+
 
         collected_word.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.collected_words);
+                openCollectedActivity();
             }
         });
+
+
     }
+
+    public void openUpdateActivity(){
+            Intent intent = new Intent(this , Update_word.class);
+            startActivity(intent);
+    }
+
+    public void openCollectedActivity(){
+        Intent intent = new Intent(this, Collected_words.class);
+        startActivity(intent);
+    }
+
 
 
 }
